@@ -38,8 +38,8 @@ jobs:
       with:
         version: 'v1.29.0'
 
-    - name: Apply K8s deployment
-      run: |
-        echo "${{ secrets.KUBECONFIG_DATA }}" | base64 -d > kubeconfig
-        export KUBECONFIG=$(pwd)/kubeconfig
-        kubectl apply -f k8s-deployment.yaml
+    # - name: Apply K8s deployment
+    #   run: |
+    #     echo "${{ secrets.KUBECONFIG_DATA }}" | base64 -d > kubeconfig
+    #     export KUBECONFIG=$(pwd)/kubeconfig
+    #     kubectl apply -f k8s-deployment.yaml
