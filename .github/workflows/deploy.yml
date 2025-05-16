@@ -32,5 +32,3 @@ jobs:
         context: .
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/ml-predictor:latest
-
- 
