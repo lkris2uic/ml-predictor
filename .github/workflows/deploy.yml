@@ -33,13 +33,4 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/ml-predictor:latest
 
-    - name: Set up kubectl
-      uses: azure/setup-kubectl@v3
-      with:
-        version: 'v1.29.0'
-
-    # - name: Apply K8s deployment
-    #   run: |
-    #     echo "${{ secrets.KUBECONFIG_DATA }}" | base64 -d > kubeconfig
-    #     export KUBECONFIG=$(pwd)/kubeconfig
-    #     kubectl apply -f k8s-deployment.yaml
+ 
